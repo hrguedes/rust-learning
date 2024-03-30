@@ -5,6 +5,9 @@ use utils::terminal::{exibir_menu, limpar_tela};
 mod utils;
 mod fundamentos;
 mod tipos;
+mod controle;
+mod ownership;
+mod funcoes;
 
 fn main() {
     loop {
@@ -18,9 +21,9 @@ fn main() {
         match selecionado {
             1 => fundamentos::execultar(),
             2 => tipos::executar(),
-            3 => println!("3"),
-            4 => println!("4"),
-            5 => println!("5"),
+            3 => controle::executar(),
+            4 => funcoes::executar(),
+            5 => ownership::executar(),
             _ => exit(0),
         }
     }
